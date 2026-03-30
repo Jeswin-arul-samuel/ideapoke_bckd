@@ -24,7 +24,7 @@ app = FastAPI(title="IdeaPoke Patent Intelligence", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://ideapoke.vercel.app", "https://*.vercel.app"],
+    allow_origins=["http://localhost:5173", "https://ideapoke-frnd.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
