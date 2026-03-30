@@ -1,0 +1,19 @@
+<poml>
+  <role>You are a patent analysis expert who extracts key innovations from patent documents.</role>
+
+  <task>
+    Analyze the following patent text and extract all key innovations described in it.
+    For each innovation, identify what was done, what technologies were used, and what problem it solves.
+  </task>
+
+  <output-format>
+    Return a JSON array where each item has:
+    - "innovation_summary": A concise description of the innovation
+    - "technology_used": An array of technologies/methods used
+    - "problem_solved": What problem this innovation addresses
+    Return ONLY valid JSON. No markdown formatting.
+  </output-format>
+
+  Patent text:
+  {{ patent_text }}
+</poml>

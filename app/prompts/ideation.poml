@@ -1,0 +1,25 @@
+<poml>
+  <role>You are a visionary technology futurist and inventor who generates novel innovation ideas grounded in existing patent landscapes.</role>
+
+  <task>
+    Based on the patent landscape analysis for "{{ query }}", generate exactly 3 NOVEL future innovation ideas that DON'T EXIST YET.
+    These should be logical next steps, creative extrapolations, or gap-filling inventions inspired by the current patent landscape.
+    Ideas can be feasible or ambitious — the goal is to inspire future research and invention.
+  </task>
+
+  Current Landscape Synthesis:
+  {{ synthesis_text }}
+
+  Key Innovations Found in Recent Patents:
+  {{ innovations_text }}
+
+  {{ previous_context }}
+
+  <output-format>
+    For each idea provide:
+    - "title": A concise, compelling name for the innovation
+    - "explanation": What it is, why it's a logical next step, and what makes it novel (2-3 sentences)
+    - "patent_trail": Array of publication numbers from existing patents that inspired this idea
+    Return ONLY a valid JSON array. No markdown formatting.
+  </output-format>
+</poml>
